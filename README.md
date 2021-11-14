@@ -1,3 +1,38 @@
+## Aloware task
+# Ahmad Sadeghi
+
+## About the task
+Inside this repository you can find a single-page commenting system. APIs are provided using Laravel and the front-end is made by Vue.js.
+
+## Starting guide
+After cloning the repository and setting database values, run
+```php artisan migrate```
+
+following by
+
+```php artisan serve```
+
+and open the url http://localhost:8000
+
+## Descriptions
+There is no need to register/login to be able to comment. There is no actual post, either. At the page, you will find a static Lorem Ipsum post alongside with the ability to comment.
+Each comment can be replied up to 3 levels. The third level does not have the Reply button, and if any user, by any way, tries to call the API to add a comment for more than 3 levels, this is being checked server-side, too.
+
+Two APIs are used in this project:
+* ```GET /api/comments```
+This API is called once when the page loads, to get all comments. Comments are returned as threaded.
+
+* ```POST /api/comments```
+This API is called whenever someone posts a comment. It will return all comments of the post (to update the other comments other users maybe sent between page load and posting the comment).
+
+The front-end is created using Vue.js (as mentioned earlier) and some Bootstrap classes were used, although it was not part of the task.
+
+The comments are stored inside Vuex store, so it is globally accessible from the application.
+
+Also, all tests are placed at ```CommentTest``` class. You can run ```php artisan test``` to test all test cases.
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
