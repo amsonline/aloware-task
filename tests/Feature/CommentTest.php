@@ -12,7 +12,7 @@ class CommentTest extends TestCase
 
     use RefreshDatabase;
 
-    private $uri = "/api/comment/store";
+    private $uri = "/api/comment";
 
     /**
      * Testing to add a valid comment

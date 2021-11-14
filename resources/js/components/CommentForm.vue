@@ -28,7 +28,7 @@
         methods:{
             replyTo(){
                 this.errors = [];
-                axios.post('/api/comment/store', {content: this.content, username: this.username, parent_id: this.parentId}).then(response => {
+                axios.post('/api/comments', {content: this.content, username: this.username, parent_id: this.parentId}).then(response => {
                     this.content = '';
                     if (response.data.success) {
                         this.$store.commit('updateComments', response.data.data);

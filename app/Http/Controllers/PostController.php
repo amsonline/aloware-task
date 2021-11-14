@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function index() {
-        $comments = Comment::getComments();
-        return view('posts.index', compact('comments'));
+        return view('posts.index');
     }
 }

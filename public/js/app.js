@@ -2165,7 +2165,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.errors = [];
-      axios.post('/api/comment/store', {
+      axios.post('/api/comments', {
         content: this.content,
         username: this.username,
         parent_id: this.parentId
@@ -2320,7 +2320,7 @@ __webpack_require__.r(__webpack_exports__);
     getComments: function getComments() {
       var _this = this;
 
-      axios.get('/api/comment').then(function (response) {
+      axios.get('/api/comments').then(function (response) {
         console.log(response);
 
         if (response.data.success) {

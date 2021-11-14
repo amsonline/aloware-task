@@ -14,5 +14,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/comment', [CommentController::class, "index"]);
-Route::post('/comment/store', [CommentController::class, "store"]);
+Route::get('/comments', [CommentController::class, "index"]);
+Route::post('/comments', [CommentController::class, "store"]);

@@ -49,7 +49,7 @@
         },
         methods:{
             getComments() {
-                axios.get('/api/comment').then(response => {
+                axios.get('/api/comments').then(response => {
                     console.log(response);
                     if(response.data.success){
                         this.$store.commit('initializeComments', response.data.data);
