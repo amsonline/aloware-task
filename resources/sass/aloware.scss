@@ -1,0 +1,42 @@
+@media (min-width: 768px) {
+    .comment-list .arrow:after, .comment-list .arrow:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent;
+    }
+    .comment-list .card.arrow.left:after, .comment-list .card.arrow.left:before {
+      border-left: 0;
+    }
+
+    .comment-list .card.arrow.left:before {
+      left: -15px;
+      top: 20px;
+      border-right-color: inherit;
+      border-width: 16px;
+    }
+
+    .comment-list .card.arrow.left:after {
+      left: -14px;
+      top: 21px;
+      border-right-color: #FFFFFF;
+      border-width: 15px;
+    }
+
+    .comment-list .card .card-heading.right {
+        border-right-width: 0px;
+        border-top-left-radius: 0px;
+        right: 0px;
+        background-color: #f5f5f5
+    }
+
+    .comment-list .card .card-heading {
+        padding: 4px 15px;
+        position: absolute;
+        border: none;
+        border-top-right-radius: 0px;
+        top: 1px;
+    }
+  }
